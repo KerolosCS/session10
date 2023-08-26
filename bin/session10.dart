@@ -1,17 +1,27 @@
-// import 'bank_account.dart';
+import 'bank_account.dart';
 import 'facebook_account.dart';
 
 void main() {
-  // BankAccount account1 = BankAccount(1000);
-  // print(account1.deposite(2000));
-  // print(account1.balance);
-  // account1.balance = 3333;
-  // print(account1.balance);
+  //Taskk1 --> Encapsulation
 
+  BankAccount account = BankAccount(1000);
+  print('\nTask1\n----------------------------------------------------------');
+  print(account.deposite(2000));
+  print(account.balance);
+  account.balance = 3333;
+  print(account.balance);
+
+  //Task2
+  /*
+  override
+  setter 
+  getter
+   */
   FaceBookAccount faceBookAccount = FaceBookAccount('30/7');
-  print(faceBookAccount.password);
-  faceBookAccount.password = '12';
-  faceBookAccount.password = '1234';
-  faceBookAccount.password = 'sd;ljaskfjd;sf';
-  faceBookAccount.password = 'qqqqqqqqq#';
+  print('----------------------------------------------------------\nTask2\n');
+  print(faceBookAccount.password); // getter
+  faceBookAccount.password = '12'; //setter
+  faceBookAccount.password = '1234'; // setter
+  faceBookAccount.password = 'sd;ljaskfjd;sf'; //setter
+  faceBookAccount.password = 'qqqqqqqqq#'; //setter
 }

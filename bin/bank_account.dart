@@ -16,7 +16,7 @@ class BankAccount {
   }
 
   set balance(double newBalance) {
-    _balance += newBalance;
+    _balance = newBalance;
   }
 
   String deposite(double value) {
